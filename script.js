@@ -14,7 +14,7 @@ createAnswerPlaceHolder();
 function createAnswerPlaceHolder() {
     let placeHolder = "";
     for (let i = 0; i < answer.length; i++) {
-        placeHolder+=" _ ";
+        placeHolder+=" _ ";2
     }
 
     guessBox.innerHTML = placeHolder;
