@@ -3,11 +3,29 @@ const key = document.querySelectorAll(".letter");
 const guessBox = document.getElementById("guess");
 let currentGuess = [];
 
-function updateScreen() {
-    let guess = "current guess: ";
+const answer = "test";
 
+createAnswerPlaceHolder();
+function createAnswerPlaceHolder() {
+    let placeHolder = "";
+    for (let i = 0; i < answer.length; i++) {
+        placeHolder+=" _ ";
+    }
+
+    guessBox.innerHTML = placeHolder;
+}
+
+function updateScreen() {
+    let guess = "";
+
+    //add users input
     for (let i = 0; i < currentGuess.length; i++) {
         guess+=currentGuess[i];
+    }
+
+    //add remaining underscores if any
+    for (let i = 0; i < answer.length - currentGuess.length; i++) {
+        guess+=" _ "
     }
 
     guessBox.innerHTML = guess;
