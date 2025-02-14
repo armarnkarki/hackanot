@@ -4,9 +4,7 @@ const guessBox = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const deleteButton = document.getElementById("delete");
 
-const randomFoods = ["Pizza", "Sushi", "Pasta", "Tacos", "Burgers", "Ramen", "Salad",
-    "Steak", "Pancakes", "Burritos", "Croissants", "Curry", "Paella", "Falafel", 
-    "Cheesecake", "Samosas"];
+const randomFoods = ["Burrito", "Biscuit", "Granola", "Popcorn", "Pudding", "Muffins", "Noodles"];
 
 let currentGuess = [];
 
