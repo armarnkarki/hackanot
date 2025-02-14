@@ -5,8 +5,8 @@ const submitButton = document.getElementById("submit");
 const deleteButton = document.getElementById("delete");
 
 const randomFoods = ["Pizza", "Sushi", "Pasta", "Tacos", "Burgers", "Ramen", "Salad",
-    "Steak", "Ice Cream", "Pancakes", "Burritos", "Croissants", "Curry", "Fried Chicken", 
-    "Paella", "Hot Dogs", "Dim Sum", "Falafel", "Cheesecake", "Samosas"];
+    "Steak", "Pancakes", "Burritos", "Croissants", "Curry", "Paella", "Falafel", 
+    "Cheesecake", "Samosas"];
 
 let currentGuess = [];
 
