@@ -4,9 +4,13 @@ const guessBox = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const deleteButton = document.getElementById("delete");
 
+const randomFoods = ["Pizza", "Sushi", "Pasta", "Tacos", "Burgers", "Ramen", "Salad",
+    "Steak", "Ice Cream", "Pancakes", "Burritos", "Croissants", "Curry", "Fried Chicken", 
+    "Paella", "Hot Dogs", "Dim Sum", "Falafel", "Cheesecake", "Samosas"];
+
 let currentGuess = [];
 
-const answer = "test";
+const answer = randomFoods[Math.floor(Math.random() * randomFoods.length)];
 
 maxLengthGuess = false;
 
