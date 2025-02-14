@@ -5,6 +5,8 @@ let currentGuess = [];
 
 const answer = "test";
 
+maxLengthGuess = false;
+
 createAnswerPlaceHolder();
 function createAnswerPlaceHolder() {
     let placeHolder = "";
@@ -29,136 +31,120 @@ function updateScreen() {
     }
 
     guessBox.innerHTML = guess;
+
+    if (guess.length == answer.length) {
+        maxLengthGuess = true;
+    }
+}
+
+function updateGuess(letter) {
+    if (!maxLengthGuess) {
+        currentGuess.push(letter);
+        updateScreen();
+    } 
 }
 
 //Add click event buttons for each key
 key[0].addEventListener("click", () => {
-    currentGuess.push("A");
-    updateScreen();
-
+    updateGuess("A");
 });
 
 key[1].addEventListener("click", () => {
-    currentGuess.push("B");
-    updateScreen();
+    updateGuess("B");
 });
 
 key[2].addEventListener("click", () => {
-    currentGuess.push("C");
-    updateScreen();
+    updateGuess("C");
 });
 
 key[3].addEventListener("click", () => {
-    currentGuess.push("D");
-    updateScreen();
+    updateGuess("D");
 });
 
 key[4].addEventListener("click", () => {
-    currentGuess.push("E");
-    updateScreen();
+    updateGuess("E");
 });
 
 key[5].addEventListener("click", () => {
-    currentGuess.push("F");
-    updateScreen();
+    updateGuess("F");
 });
 
 key[6].addEventListener("click", () => {
-    currentGuess.push("G");
-    updateScreen();
+    updateGuess("G");
 });
 
 key[7].addEventListener("click", () => {
-    currentGuess.push("H");
-    updateScreen();
+    updateGuess("H");
 });
 
 key[8].addEventListener("click", () => {
-    currentGuess.push("I");
-    updateScreen();
+    updateGuess("I");
 });
 
 key[9].addEventListener("click", () => {
-    currentGuess.push("J");
-    updateScreen();
+    updateGuess("J");
 });
 
 key[10].addEventListener("click", () => {
-    currentGuess.push("K");
-    updateScreen();
+    updateGuess("K");
 });
 
 key[11].addEventListener("click", () => {
-    currentGuess.push("L");
-    updateScreen();
+    updateGuess("L");
 });
 
 key[12].addEventListener("click", () => {
-    currentGuess.push("M");
-    updateScreen();
+    updateGuess("M");
 });
 
 key[13].addEventListener("click", () => {
-    currentGuess.push("N");
-    updateScreen();
+    updateGuess("N");
 });
 
 key[14].addEventListener("click", () => {
-    currentGuess.push("O");
-    updateScreen();
+    updateGuess("O");
 });
 
 key[15].addEventListener("click", () => {
-    currentGuess.push("P");
-    updateScreen();
+    updateGuess("P");
 });
 
 key[16].addEventListener("click", () => {
-    currentGuess.push("Q");
-    updateScreen();
+    updateGuess("Q");
 });
 
 key[17].addEventListener("click", () => {
-    currentGuess.push("R");
-    updateScreen();
+    updateGuess("R");
 });
 
 key[18].addEventListener("click", () => {
-    currentGuess.push("S");
-    updateScreen();
+    updateGuess("S");
 });
 
 key[19].addEventListener("click", () => {
-    currentGuess.push("T");
-    updateScreen();
+    updateGuess("T");
 });
 
 key[20].addEventListener("click", () => {
-    currentGuess.push("U");
-    updateScreen();
+    updateGuess("U");
 });
 
 key[21].addEventListener("click", () => {
-    currentGuess.push("V");
-    updateScreen();
+    updateGuess("V");
 });
 
 key[22].addEventListener("click", () => {
-    currentGuess.push("W");
-    updateScreen();
+    updateGuess("W");
 });
 
 key[23].addEventListener("click", () => {
-    currentGuess.push("X");
-    updateScreen();
+    updateGuess("X");
 });
 
 key[24].addEventListener("click", () => {
-    currentGuess.push("Y");
-    updateScreen();
+    updateGuess("Y");
 });
 
 key[25].addEventListener("click", () => {
-    currentGuess.push("Z");
-    updateScreen();
+    updateGuess("Z");
 });
