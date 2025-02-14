@@ -1,6 +1,9 @@
 const body = document.body;
 const key = document.querySelectorAll(".letter");
 const guessBox = document.getElementById("guess");
+const submitButton = document.getElementById("submit");
+const deleteButton = document.getElementById("delete");
+
 let currentGuess = [];
 
 const answer = "test";
@@ -34,6 +37,8 @@ function updateScreen() {
 
     if (guess.length == answer.length) {
         maxLengthGuess = true;
+    } else {
+        maxLengthGuess = false;
     }
 }
 
@@ -147,4 +152,13 @@ key[24].addEventListener("click", () => {
 
 key[25].addEventListener("click", () => {
     updateGuess("Z");
+});
+
+submitButton.addEventListener("click", () => {
+    
+});
+
+deleteButton.addEventListener("click", () => {
+    currentGuess.pop();
+    updateScreen();
 });
